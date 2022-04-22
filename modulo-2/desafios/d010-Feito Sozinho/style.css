@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #84e1ad;
+    margin: auto;
+}
+header {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.316);
+    background-image:linear-gradient(to top, #124328, #37c878);
+    color: white;
+    box-shadow: 0px 1px 0px 0px black;
+    text-align: center;
+    padding: 5px 0px;
+}
+#h1cabeçalho {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.916);
+}
+#pcabeçalho {
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.66);
+    padding: 10px 0px;
+}
+nav {
+    text-align: left;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+main {
+    margin: auto;
+}
+section.conteudo {
+    background-color: white;
+    padding: 1px 15px;
+    width: 800px;
+    margin: 1px auto;
+}
+h1 {
+    font-family: 'idroid';
+    font-size: 2em;
+    color: #105730;
+}
+h2 {
+    font-family: 'idroid';
+    color: #1c6e2ffd;
+    background-image: linear-gradient(to right, #bcffda, white);
+    padding: 0px 10px;
+}
+article > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+}
+a {
+    color: #105730;
+    text-decoration: none;
+    font-weight: bolder;
+}
+img {
+    display: block;
+    margin: auto;
+}
+#video {
+    background-color: #124328;
+    padding: 15px;
+    width: 800px;
+    margin: auto;
+}
+iframe {
+    display: block;
+    margin: auto;
+}
+section#sectionlista {
+    width: 800px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.176);
+}
+article#lista {
+    background-color: #c5ebd6;
+    width: 770px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+section#titulolista {
+    background-color: #2ca763;
+    width: 790px;
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+}
+#titulolista > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: auto;
+}
+li.left {
+    display: inline-block;
+    width: 350px;
+}
+li.right {
+    display: inline-block;
+    width: 350px;
+}
+li > a {
+    text-decoration: underline;
+    font-weight: normal;
+    color: black;
+}
+aside > p {
+    font-weight: normal;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+footer {
+    background-color: #1a5c38;
+}
+footer > p {
+    color: white;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/gabriela-rocha-atos-2.mp3" controls autoplay style="background-color: blue;"></audio> <!-- 100% compatibilidade com Navegdaroes MP3 WAV OGG (primeira maneira) -->
+
+    <audio preload="metadata" autoplay controls loop style="background-color: brown;">
+        <source src="midia/gabriela-rocha-atos-2.mp3" type="audio/mpeg"> <!-- melhor formato para colocar é o MP3 com menos qualidade -->
+        <source src="midia/gabriela-rocha-atos-2.ogg" type="audio/gg">
+        <source src="midia/gabriela-rocha-atos-2.wav" type="audio/wav"> <!-- wav é arquivo pesado e não recomendado -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/gabriela-rocha-atos-2.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio> <!-- Varios formatos para tocar um único audio -->
+</body>
+</html>
