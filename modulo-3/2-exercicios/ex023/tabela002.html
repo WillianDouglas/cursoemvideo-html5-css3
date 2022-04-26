@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,32 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(odd) { /* 2n-1 */
+            background-color: lightgreen;
+            text-decoration: underline;
+        }
+
+        tbody tr:nth-child(even) { /* 2n */
+            background-color: green;
+            font-weight: bolder;
         }
 
         tfoot {
@@ -39,18 +63,20 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
-                TR,TD,TH
+                TR(Linha),TD(Dado),TH(Título da Coluna)
             TBODY
-                TR,TD,TH
+                TR(linha),TD(Dado),TH(Título da Coluna)
             TFOOT
-                TR,TD,TH
+                TR(linha),TD(Dado),TH(Título da Coluna)
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th style="width: 50px;" scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -165,9 +191,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>190.755.799</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste labore harum cum distinctio facilis est quos laborum. Beatae, quibusdam odit cupiditate quam asperiores nihil pariatur ut vitae magni eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta reiciendis ducimus eveniet laudantium quas sint consectetur, laboriosam enim ad, aliquam iure. Dolor voluptatum totam fuga commodi, libero iure impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti aut perferendis. Illum unde, reiciendis ea ut deleniti placeat repellat, esse explicabo veniam inventore numquam eveniet exercitationem, voluptates tempore vero!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste labore harum cum distinctio facilis est quos laborum. Beatae, quibusdam odit cupiditate quam asperiores nihil pariatur ut vitae magni eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta reiciendis ducimus eveniet laudantium quas sint consectetur, laboriosam enim ad, aliquam iure. Dolor voluptatum totam fuga commodi, libero iure impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti aut perferendis. Illum unde, reiciendis ea ut deleniti placeat repellat, esse explicabo veniam inventore numquam eveniet exercitationem, voluptates tempore vero!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste labore harum cum distinctio facilis est quos laborum. Beatae, quibusdam odit cupiditate quam asperiores nihil pariatur ut vitae magni eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta reiciendis ducimus eveniet laudantium quas sint consectetur, laboriosam enim ad, aliquam iure. Dolor voluptatum totam fuga commodi, libero iure impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti aut perferendis. Illum unde, reiciendis ea ut deleniti placeat repellat, esse explicabo veniam inventore numquam eveniet exercitationem, voluptates tempore vero!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste labore harum cum distinctio facilis est quos laborum. Beatae, quibusdam odit cupiditate quam asperiores nihil pariatur ut vitae magni eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta reiciendis ducimus eveniet laudantium quas sint consectetur, laboriosam enim ad, aliquam iure. Dolor voluptatum totam fuga commodi, libero iure impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti aut perferendis. Illum unde, reiciendis ea ut deleniti placeat repellat, esse explicabo veniam inventore numquam eveniet exercitationem, voluptates tempore vero!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste labore harum cum distinctio facilis est quos laborum. Beatae, quibusdam odit cupiditate quam asperiores nihil pariatur ut vitae magni eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta reiciendis ducimus eveniet laudantium quas sint consectetur, laboriosam enim ad, aliquam iure. Dolor voluptatum totam fuga commodi, libero iure impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti aut perferendis. Illum unde, reiciendis ea ut deleniti placeat repellat, esse explicabo veniam inventore numquam eveniet exercitationem, voluptates tempore vero!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste labore harum cum distinctio facilis est quos laborum. Beatae, quibusdam odit cupiditate quam asperiores nihil pariatur ut vitae magni eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta reiciendis ducimus eveniet laudantium quas sint consectetur, laboriosam enim ad, aliquam iure. Dolor voluptatum totam fuga commodi, libero iure impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti aut perferendis. Illum unde, reiciendis ea ut deleniti placeat repellat, esse explicabo veniam inventore numquam eveniet exercitationem, voluptates tempore vero!</p>
 </body>
 </html>
