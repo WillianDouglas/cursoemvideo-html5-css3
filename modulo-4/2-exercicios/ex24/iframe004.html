@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quod dicta dolores vero tempore asperiores cum fugiat. A harum libero, rerum perspiciatis, ad sint blanditiis officia perferendis ipsam odio vel.</p>
+    <!-- O parâmetro sandbox="" é para proteger seu site do que tem dentro do iframe, o parâmetro pode usar várias prropriedades, tais como:
+
+    sandbox="sandbox" * Liga a proteção ao máximo possível, NÃO permitindo a coleta de dados pelo iframe
+
+    sandbox="allow-same-origin" * Libera todas permissões se o conteúdo no iframe tiver a mesma origem
+
+    sandbox="allow-forms" * Permite formulários
+
+    sandbox="allow-scripts" * Permite Scripts
+    
+    -->
+    <iframe src="paginas-extras/pag004.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur amet placeat quisquam ipsum reprehenderit ut pariatur corrupti quod expedita sed vel sint deserunt, a totam optio laboriosam hic incidunt.</p>
+</body>
+</html>
